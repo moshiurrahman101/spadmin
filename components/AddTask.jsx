@@ -4,6 +4,7 @@ import DateTimePicker from "./smallElements/DateTimePicker";
 
 export default function AddTask() {
   const [categories, setCategories] = useState("");
+  const [priority, setPriority] = useState("");
   return (
     <div className="flex mt-5 justify-center">
       <div className="mt-5 p-5 min-w-md bg-white rounded-md shadow-sm">
@@ -20,6 +21,12 @@ export default function AddTask() {
             <option value="Personal">Personal</option>
             <option value="Work">Work (Project)</option>
             <option value="Finance">Finance</option>
+          </select>
+          <select name="priority" onChange={(e) => setPriority(e.target.value)}>
+            <option value="">Priority</option>
+            <option value="1">High Priority</option>
+            <option value="2">Medium Priority</option>
+            <option value="3">Low Priority</option>
           </select>
           <textarea
             placeholder="Write your task description here..."
