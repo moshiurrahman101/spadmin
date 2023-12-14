@@ -11,7 +11,7 @@ export default function Dashboard() {
         <Header heading="Dashboard" />
         <hr className="mt-5" />
         <TopCard />
-        {/* <TaskShowcase /> */}
+        <TaskShowcase />
       </main>
     </div>
   );
