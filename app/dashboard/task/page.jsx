@@ -27,7 +27,9 @@ export default function Task() {
             <main className="w-screen p-5">
                 <Header heading="All Task" />
                  <TaskShowcase />
-                 {content}
+                 {
+                    
+                 }
             </main>
         </div>
     )

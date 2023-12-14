@@ -1,13 +1,5 @@
-import { useGetTasksQuery } from "@/app/api/apiSlice";
-
 export default function TaskShowcase() {
-  const {
-    data: tasks,
-    isLoading,
-    isSuccess,
-    isError,
-    error    
-  } = useGetTasksQuery();
+  
   return(
     <div className="flex justify-center">
       <div className="lg:w-[700px] w-full bg-white rounded-md shadow-sm p-5 mt-4">
